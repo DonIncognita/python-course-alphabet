@@ -17,9 +17,9 @@ def task_1_fix_names_start_letter(data: DT) -> DT:
         fix_names_start_letters([{'name': 'Alex', 'age': 26}, {'name': 'denys', 'age': 89}])
         >>> [{'name': 'Alex', 'age': 26}, {'name': 'Denys', 'age': 89}]
     """
-    for DT in data:
-        if DT.get('name'):
-            DT['name'] = DT['name'].upper()
+    for item in data:
+        if item.get('name'):
+            item['name'] = item['name'].upper()
     return data
 
 
